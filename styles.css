@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+/* HEADER */
+header{
+    text-align: center;
+    background-color: #415a77;
+    padding: 12px;
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+/* NAV BAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #415a77;
+    padding: 6px;
+    top: 50px;
+}
+.top-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.top-nav li {
+    margin: 0;
+    padding: 0;
+}
+.top-nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+.top-nav li a:hover {
+    background-color: #e0e1dd;
+    color:#415a77;
+}
+.Menu-Button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #e0e1dd;
+    cursor: pointer;
+}
+@media (max-width: 650px) {
+    .top-nav li {
+        width: 100%;
+        text-align: center;
+    }
+    .top-nav.show {
+        display: flex;
+    }
+
+    .Menu-Button {
+        display: block;
+    }
+}
+@media (max-width: 450px) {
+    .top-nav li {
+        width: 100%;
+        text-align: center;
+    }
+    .top-nav.show {
+        display: flex;
+    }
+
+    .Menu-Button {
+        display: block;
+    }
+}
+
+/*MAIN CONTAINER*/
+.Container{
+    margin-top: 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 8%;
+    padding-right: 8%;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 8%;
+}
+.Container > div {
+    padding: 10px;
+    font-size: 18px;
+    text-align: justify;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h4{
+    text-align: center;
+    text-decoration: white;
+}
+.Container p {
+    margin-top: 10px;
+}
+.Container > div:hover{
+    border: 3px solid #003049;
+}
+
+/*ALBUM PAGE*/
+.album-container {
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+}
+.album-container p {
+    padding-top: 30px;
+    font-size: large;
+    color: #1b263b;
+}
+.back-btn {
+    margin-top: 40px;
+}
+
+.back-btn a {
+    color: #003049;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.back-btn a i {
+    margin-right: 6px;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+
+/*FOOTER*/
+footer {
+    background-color: #1b263b;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    .Container{
+    margin-top: 40px;
+    gap: 20px;
+    padding-left: 6%;
+    padding-right: 6%;
+    }
+}
+@media (max-width: 650px) {
+    .Container{
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 15%;
+    }
+}
+
